@@ -1,0 +1,3 @@
+To tell GCC to emit extra information for use by a debugger, in almost all cases you need only to add -g to your other options.
+
+GCC allows you to use -g with -O. The shortcuts taken by optimized code may occasionally be surprising: some variables you declared may not exist at all; flow of control may briefly move where you did not expect it; some statements may not be executed because they compute constant results or their values are already at hand; some statements may execute in different places because they have been moved out of loops. Nevertheless it is possible to debug optimized output. This makes it reasonable to use the optimizer for programs that might have bugs.
