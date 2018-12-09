@@ -4,9 +4,13 @@ read this document: in english, на русском, українською мо
 
 This program is developed to make machine translation difficult. For this purpose, it replaces symbols in the raw text to the same looking symbols from the other alphabet.
 
+![Before](https://raw.githubusercontent.com/xdevelnet/filedrop/master/img/before.png)
+![After](https://raw.githubusercontent.com/xdevelnet/filedrop/master/img/after.png)
+
+
 ### Prehistory
 
-During furious freelancing for the EU company I had to deal with devices, which originally had English manual. In order to apply it to the local production line, they used fast and free machine translation. Tranlation mistakes led to various incidents in factory which resulted to breakdowns and even near miss. 
+During furious freelancing for the EU company I had to deal with devices, which originally had English manual. In order to apply it to the local production line, they used fast and free machine translation. Translation mistakes led to various incidents in factory which resulted to breakdowns and even near miss. 
 
 One of the ways to force company to hire human translator is to make machine translation difficult and pay attention to important notes inside this documentation.
 
@@ -97,3 +101,49 @@ make
 
 1. Любая современная POSIX-совместимая ОС
 2. C99 компилятор
+
+# Untranslable
+
+Ця програма призначена для ускладнення машинного перекладу тексту з одної мови на іншу. Для цього відбувається заміна літер в початковому тексті на літери з іншої мови або алфавіту, що виглядають так само.
+
+### Передісторія
+
+Протягом несамовитого фрілансу на одну європейську компанію довелося мати справу з обладнанням, документація до яких була першопочатково англійською мовою. Для того аби адаптувати її до місцевого виробництва був застосований швидкий та безкоштовний машинний переклад. У зв’язку з неточностями, що виникли внаслідок такого перекладу, були інциденти, пов’язані з пошкодженням обладнання, та ледь не призвели до травм.
+
+Один з методів змусити компанію найняти людського перекладача — це максимально ускладнити машинний переклад, та все-таки звернути увагу на важливі примітки всередині документації.
+
+### Початок роботи
+
+Перш за все, необхідно завантажити файли проекту
+
+```
+git clone https://github.com/xdevelnet/untranslable.git
+```
+
+Зайти в директорію проекта
+
+```
+cd untranslable
+```
+
+Зібрати проект
+
+```
+make
+```
+
+Програма готова! Ви можете запустити її, передавши в якості аргумента валідний UTF-8 або ASCII файл. Результат буде збережено у файлі з такою самою назвою, але з префіксом "u.". Давайте перевіримо на зразках, що входять в комплект з проектом!
+
+```
+./untranslable examples/example_ru.txt
+```
+В директорії `examples` тепер міститься файл `u.example_ru.txt` з результатом.
+
+### Особливості
+
+Теоретично програма може підтримувати пошук і заміну будь-яких гліфів UTF-8. На поточний момент база даних містить лише заміну латиниці на кирилицю і навпаки.
+
+Необхідні вимоги для успішного збирання та запуску проекту:
+
+1. Будь-яка сучасна POSIX-сумісна операційна система
+2. C99 компілятор
