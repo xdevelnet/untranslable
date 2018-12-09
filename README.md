@@ -1,4 +1,4 @@
-read this document: in english, на русском, українською мовою
+read this document: [in english](https://github.com/xdevelnet/untranslable#untranslable), [на русском](https://github.com/xdevelnet/untranslable#untranslable-1), [українською мовою](https://github.com/xdevelnet/untranslable#untranslable-2)
 
 # Untranslable
 
@@ -60,6 +60,9 @@ Build&run requirements:
 
 Эта программа предназначена для того, чтобы усложнить машинный перевод текстов с одного языка на другой. Для этого происходит замена символов в исходном тексте на символы из другого алфавита или языка, но одинаковые по виду.
 
+![До](https://raw.githubusercontent.com/xdevelnet/filedrop/master/img/before.png)
+![После](https://raw.githubusercontent.com/xdevelnet/filedrop/master/img/after.png)
+
 ### Предыстория
 
 Во время неистового рабочего процесса на фрилансе на одну европейскую компанию приходилось иметь дело с утройствами, инструкция к которым была изначально написана на английском языке. Для того чтобы адаптировать её под местое производство, был использован быстрый и бесплатный машинный перевод. Из-за неточностей, которые возникли в следствии такого перевода, были различные инциденты на предприятии, которые приводили к поломкам и чуть не привели к человеческим травмам.
@@ -105,6 +108,9 @@ make
 # Untranslable
 
 Ця програма призначена для ускладнення машинного перекладу тексту з одної мови на іншу. Для цього відбувається заміна літер в початковому тексті на літери з іншої мови або алфавіту, що виглядають так само.
+
+![До](https://raw.githubusercontent.com/xdevelnet/filedrop/master/img/before_ua.png)
+![Після](https://raw.githubusercontent.com/xdevelnet/filedrop/master/img/after_ua.png)
 
 ### Передісторія
 
